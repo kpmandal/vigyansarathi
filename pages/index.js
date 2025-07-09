@@ -33,7 +33,7 @@ export default function Home({ notes }) {
 }
 
 export async function getStaticProps() {
-  const response = await client.getEntries({ content_type: 'scienceNote' });
+  const response = await client.getEntries({ content_type: 'scienceNotes' });
   return {
     props: {
       notes: response.items,
