@@ -1,6 +1,6 @@
 # Vigyan Sarathi - The Blog
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_NETLIFY_BADGE_ID/deploy-status)](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_NAME/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2dc4cba3-a893-4737-a9ee-89fcdd3d9cb8/deploy-status)](https://app.netlify.com/projects/vigyansarathi/deploys)
 
 Welcome to the official repository for the **Vigyan Sarathi** blog. This project is a content-driven website built to help Indian government job aspirants master the General Science section of their exams.
 
@@ -17,7 +17,7 @@ The site is built with a modern, headless architecture:
 
 ---
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/YOUR_GITHUB_USERNAME/vigyan-sarathi-blog)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kpmandal/vigyansarathi)
 
 > **Note**: Clicking this button will create a new repository in your GitHub account, set it up on Netlify, and guide you through adding the necessary environment variables. You will need your Contentful keys ready.
 
