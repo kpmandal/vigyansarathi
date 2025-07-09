@@ -1,63 +1,149 @@
-# Next + Netlify Starter
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/46648482-644c-4c80-bafb-872057e51b6b/deploy-status)](https://app.netlify.com/sites/next-dev-starter/deploys)
+Vigyan Sarathi - The Blog
 
-This is a [Next.js](https://nextjs.org/) v15 project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and set up to be instantly deployed to [Netlify](https://url.netlify.com/SyTBPVamO)!
+![alt text](https://api.netlify.com/api/v1/badges/YOUR_NETLIFY_BADGE_ID/deploy-status)
 
-This project is a very minimal starter that includes 2 sample components, a global stylesheet, a `netlify.toml` for deployment, and a `jsconfig.json` for setting up absolute imports and aliases. With Netlify, you'll have access to features like Preview Mode, server-side rendering/incremental static regeneration via Netlify Functions, and internationalized routing on deploy automatically.
+Welcome to the official repository for the Vigyan Sarathi blog. This project is a content-driven website built to help Indian government job aspirants master the General Science section of their exams.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex-cs)
+The site is built with a modern, headless architecture:
 
-(If you click this button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify)
+Framework: Next.js (for Static Site Generation and server-side features)
 
-## Table of Contents:
+Headless CMS: Contentful (for all science notes and content management)
 
-- [Getting Started](#getting-started)
-- [Installation options](#installation-options)
-- [Testing](#testing)
-  - [Included Default Testing](#included-default-testing)
-  - [Removing Renovate](#removing-renovate)
+Styling: Tailwind CSS (for a modern, utility-first design)
 
-## Getting Started
+Deployment: Netlify (for continuous, automated deployments from Git)
 
-First, run the development server:
+Live Demo
 
-```bash
+(Link to your deployed Netlify site will go here)
+
+![alt text](https://www.netlify.com/img/deploy/button.svg)
+
+Note: Clicking this button will create a new repository in your GitHub account, set it up on Netlify, and guide you through adding the necessary environment variables. You will need your Contentful keys ready.
+
+Key Features
+
+Content-Driven: All science notes, subjects, and special sections are managed entirely through the Contentful CMS, allowing for easy updates without touching code.
+
+Blazing Fast: Built with Next.js using Static Site Generation (SSG) with Incremental Static Regeneration (ISR). Pages are pre-built for maximum performance and SEO.
+
+Bilingual Ready: The Contentful model is configured to support both English and Hindi content for key fields.
+
+Styled with Tailwind CSS: A clean, professional, and responsive design using the "Saraswati" theme.
+
+SEO-Friendly: Next.js provides excellent search engine optimization out of the box.
+
+Automated Deployments: Every git push to the main branch triggers an automatic build and deployment on Netlify. Content updates in Contentful can also trigger rebuilds via webhooks.
+
+Getting Started
+
+Follow these instructions to set up the project for local development.
+
+Prerequisites
+
+Node.js (v18 or later)
+
+Git
+
+A free Contentful account
+
+1. Clone the Repository
+
+First, clone this repository to your local machine.
+
+Generated bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/vigyan-sarathi-blog.git
+cd vigyan-sarathi-blog
+
+2. Install Dependencies
+
+Install all the required npm packages.
+
+Generated bash
+npm install
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Bash
+IGNORE_WHEN_COPYING_END
+3. Set Up Contentful
+
+If you haven't already, log in to your Contentful space and ensure you have the following Content Models:
+
+Subject (Fields: name)
+
+Exam Spotlight (Fields: details)
+
+Science Note (With fields for title, slug, content (Rich Text), etc., and a subject reference field linked to the Subject model).
+
+4. Set Up Environment Variables
+
+This project requires API keys to connect to Contentful.
+
+Create a new file in the root of the project named .env.local.
+
+Copy the contents of .env.example (or the block below) into it.
+
+Generated env
+# .env.local
+# Get these values from your Contentful space under Settings -> API keys
+CONTENTFUL_SPACE_ID="YOUR_SPACE_ID_HERE"
+CONTENTFUL_ACCESS_TOKEN="YOUR_CONTENT_DELIVERY_API_TOKEN_HERE"
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Env
+IGNORE_WHEN_COPYING_END
+
+Replace the placeholder values with your actual keys from Contentful. The .env.local file is included in .gitignore and will not be committed to your repository.
+
+5. Run the Development Server
+
+You're all set! Start the local development server.
+
+Generated bash
 npm run dev
-# or
-yarn dev
-```
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Bash
+IGNORE_WHEN_COPYING_END
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Deployment to Netlify
 
-### Installation options
+This repository is configured for instant deployment on Netlify.
 
-**Option one:** One-click deploy
+Push your cloned repository to your own GitHub account.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex-cs)
+Log in to Netlify and select "New site from Git".
 
-**Option two:** Manual clone
+Choose your repository.
 
-1. Clone this repo: `git clone https://github.com/netlify-templates/next-netlify-starter.git`
-2. Navigate to the directory and run `npm install`
-3. Run `npm run dev`
-4. Make your changes
-5. Connect to [Netlify](https://url.netlify.com/Bk4UicocL) manually (the `netlify.toml` file is the one you'll need to make sure stays intact to make sure the export is done and pointed to the right stuff)
+Netlify will detect the Next.js settings automatically.
 
-## Testing
+Crucially, go to Site settings > Build & deploy > Environment and add the same two environment variables you defined in your .env.local file:
 
-### Included Default Testing
+CONTENTFUL_SPACE_ID
 
-We’ve included some tooling that helps us maintain these templates. This template currently uses:
+CONTENTFUL_ACCESS_TOKEN
 
-- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
-- [Cypress](https://www.cypress.io/) - to run tests against how the template runs in the browser
-- [Cypress Netlify Build Plugin](https://github.com/cypress-io/netlify-plugin-cypress) - to run our tests during our build process
+Click "Deploy site".
 
-If your team is not interested in this tooling, you can remove them with ease!
+Automatic Rebuilds on Content Change
 
-### Removing Renovate
+To ensure your site updates when you publish new content in Contentful:
 
-In order to keep our project up-to-date with dependencies we use a tool called [Renovate](https://github.com/marketplace/renovate). If you’re not interested in this tooling, delete the `renovate.json` file and commit that onto your main branch.
+In Netlify, go to Site settings > Build & deploy > Build hooks.
+
+Create a new build hook and copy the generated URL.
+
+In Contentful, go to Settings > Webhooks.
+
+Create a new webhook, paste the Netlify URL, and configure it to trigger on Entry events (Publish, Unpublish).
