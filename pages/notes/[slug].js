@@ -65,7 +65,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const { items } = await client.getEntries({
-    content_type: 'scienceNote',
+    content_type: 'scienceNotes',
     'fields.slug': params.slug,
   });
 
