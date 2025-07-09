@@ -16,7 +16,7 @@ const options = {
     [BLOCKS.EMBEDDED_ENTRY]: (node) => {
       const { details } = node.data.target.fields;
       if (node.data.target.sys.contentType.sys.id === 'examSpotlight') {
-        return <ExamSpotlight details={details} />;
+        return <ExamSpotlight details={details} />;  
       }
     },
     // Optional: add custom styling for standard elements
@@ -55,7 +55,7 @@ export default function ScienceNotePage({ note }) {
 }
 
 export async function getStaticPaths() {
-  const response = await client.getEntries({ content_type: 'scienceNote' });
+  const response = await client.getEntries({ content_type: 'scienceNotes' });
   const paths = response.items.map(item => ({
     params: { slug: item.fields.slug },
   }));
