@@ -155,7 +155,7 @@ export default function Home({ notes }) {
 
 // This function fetches the data for the "Latest Notes" section at build time.
 export async function getStaticProps() {
-  const response = await client.getEntries({ content_type: 'scienceNote', order: '-sys.createdAt' }); // Order by creation date
+  const response = await client.getEntries({ content_type: 'scienceNotes', order: '-sys.createdAt' }); // Order by creation date
   return {
     props: {
       notes: response.items || [],
