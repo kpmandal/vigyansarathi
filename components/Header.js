@@ -73,8 +73,8 @@ export default function Header() {
             <li className="font-extrabold px-5 py-3 text-gray-500 text-sm uppercase">Notes</li>
             <li><Link href="/notes/physics"><a className="block px-5 py-3 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Physics</a></Link></li>
             <li><Link href="/notes/chemistry"><a className="block px-5 py-3 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Chemistry</a></Link></li>
-            <li><Link href="/biology"><a className="block px-5 py-3 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Biology</a></Link></li>
-            <li><Link href="/environment"><a className="block px-5 py-3 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Environment</a></Link></li>
+            <li><Link href="/notes/biology"><a className="block px-5 py-3 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Biology</a></Link></li>
+            <li><Link href="/notes/environment"><a className="block px-5 py-3 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Environment</a></Link></li>
             
             <li className="border-t mt-4"><Link href="/#"><a className="block px-5 py-4 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Quizzes</a></Link></li>
             <li><Link href="/#"><a className="block px-5 py-4 hover:bg-gray-100" onClick={() => setIsMenuOpen(false)}>Question Bank</a></Link></li>
