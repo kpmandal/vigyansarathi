@@ -74,7 +74,7 @@ export default function PhysicsHomePage() {
               chapterNum="8" 
               title="Motion" 
               description="Learn about distance, displacement, velocity, and acceleration. Master the three equations of motion and their applications."
-              href="/#"
+              href="/notes/pages/physics/chapter-8-motion"
             />
             <ChapterCard 
               icon="💪" 
