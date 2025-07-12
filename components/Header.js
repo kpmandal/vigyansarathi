@@ -31,10 +31,10 @@ export default function Header() {
                 <svg className="w-4 h-4 mt-1 transform group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
               </button>
               <div className="absolute z-10 hidden group-hover:block bg-white shadow-lg rounded-md mt-2 w-48 py-2">
-                <Link href="/#"><a className="block px-4 py-3 text-sm text-gray-700 hover:bg-accent-light hover:text-accent">Physics</a></Link>
-                <Link href="/#"><a className="block px-4 py-3 text-sm text-gray-700 hover:bg-accent-light hover:text-accent">Chemistry</a></Link>
-                <Link href="/#"><a className="block px-4 py-3 text-sm text-gray-700 hover:bg-accent-light hover:text-accent">Biology</a></Link>
-                <Link href="/#"><a className="block px-4 py-3 text-sm text-gray-700 hover:bg-accent-light hover:text-accent">Environment</a></Link>
+                <Link href="/notes/physics"><a className="block px-4 py-3 text-sm text-gray-700 hover:bg-accent-light hover:text-accent">Physics</a></Link>
+                <Link href="/notes/chemistry"><a className="block px-4 py-3 text-sm text-gray-700 hover:bg-accent-light hover:text-accent">Chemistry</a></Link>
+                <Link href="/notes/biology"><a className="block px-4 py-3 text-sm text-gray-700 hover:bg-accent-light hover:text-accent">Biology</a></Link>
+                <Link href="/notes/environment"><a className="block px-4 py-3 text-sm text-gray-700 hover:bg-accent-light hover:text-accent">Environment</a></Link>
               </div>
             </li>
             <li><Link href="/#"><a className="text-gray-700 hover:text-accent">Quizzes</a></Link></li>
