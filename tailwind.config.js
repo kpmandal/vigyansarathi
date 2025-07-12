@@ -1,16 +1,17 @@
-// tailwind.config.js
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        'primary-bg': '#F5F7FA', // Light Grey
-        'accent': '#2962FF',     // Professional Blue
-        'cta': '#FF6D00',         // Bright Orange
+        'primary-bg': '#F5F7FA',
+        'accent': '#2962FF',
+        'cta': '#FF6D00',
         'dark-text': '#1a202c',
       },
       fontFamily: {
@@ -20,6 +21,6 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography'), // Useful for styling blog content
+    require('@tailwindcss/typography'),
   ],
 }
