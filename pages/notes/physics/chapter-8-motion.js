@@ -1,3 +1,4 @@
+
 // pages/notes/physics/chapter-8-motion.js
 import Head from 'next/head'; // Import Head component to manage the <head> of the page
 
@@ -304,4 +305,56 @@ export default function MotionChapterPage() {
               <h4>Q1: An object has moved through a distance. Can it have zero displacement?</h4>
               <p><strong>Answer:</strong> Yes. If the object's final position is the same as its initial position, its displacement is zero. Example: An athlete running one full lap of a circular track.</p>
               <h4>Q2: A farmer moves along the boundary of a square field of side 10 m in 40 s. What will be the magnitude of displacement of the farmer at the end of 2 minutes 20 seconds?</h4>
-              <p><strong>Answer:</strong> Total time = 140 s. Time for one lap = 40 s. Number of laps = 140/40 = 3.5. After
+              <p><strong>Answer:</strong> Total time = 140 s. Time for one lap = 40 s. Number of laps = 140/40 = 3.5. After 3.5 laps, the farmer is at the diagonally opposite corner. Displacement = √(10² + 10²) = √200 = 10√2 m ≈ <strong>14.14 m</strong>.</p>
+              <h4>Q3: What does the odometer of an automobile measure?</h4>
+              <p><strong>Answer:</strong> The odometer measures the total <strong>distance</strong> covered.</p>
+          </div>
+          
+          <hr />
+
+          <h2>Test Your Knowledge: Competitive Exam MCQ Quiz 📝</h2>
+            <ol className="mcq-list">
+                <li>A body is thrown vertically upward with velocity u, the greatest height h to which it will rise is:
+                    <span className="mcq-options"> A) u/g   B) u²/2g   C) u²/g   D) u/2g </span>
+                </li>
+                <li>If the displacement of an object is proportional to the square of time, then the object moves with:
+                    <span className="mcq-options"> A) Uniform velocity   B) Uniform acceleration   C) Increasing acceleration   D) Decreasing acceleration </span>
+                </li>
+                <li>The slope of a velocity-time graph represents:
+                    <span className="mcq-options"> A) Distance   B) Displacement   C) Acceleration   D) Speed </span>
+                </li>
+                <li>Which of the following can sometimes be 'zero' for a moving body? (i) Average velocity (ii) Distance travelled (iii) Average speed (iv) Displacement
+                    <span className="mcq-options"> A) Only (i)   B) (i) and (ii)   C) (i) and (iv)   D) Only (iv) </span>
+                </li>
+                <li>When a car driver travelling at a speed of 10 m/s applies brakes and brings the car to rest in 20 s, then the retardation will be:
+                    <span className="mcq-options"> A) + 2 m/s²   B) - 2 m/s²   C) - 0.5 m/s²   D) + 0.5 m/s² </span>
+                </li>
+                <li>The numerical ratio of displacement to distance for a moving object is:
+                    <span className="mcq-options"> A) Always less than 1   B) Always equal to 1   C) Always more than 1   D) Equal to or less than 1 </span>
+                </li>
+                <li>A particle is moving in a circular path of radius r. The displacement after half a circle would be:
+                    <span className="mcq-options"> A) Zero   B) πr   C) 2r   D) 2πr </span>
+                </li>
+                <li>Suppose a boy is enjoying a ride on a merry-go-round which is moving with a constant speed of 10 m/s. It implies that the boy is:
+                    <span className="mcq-options"> A) At rest   B) Moving with no acceleration   C) In accelerated motion   D) Moving with uniform velocity </span>
+                </li>
+                <li>The SI unit of acceleration is:
+                    <span className="mcq-options"> A) m/s   B) km/h   C) m/s²   D) m·s </span>
+                </li>
+                <li>From the given v-t graph, it can be inferred that the object is: (Imagine a v-t graph which is a straight line parallel to the time axis)
+                    <span className="mcq-options"> A) In uniform motion   B) At rest   C) In non-uniform motion   D) Moving with uniform acceleration </span>
+                </li>
+                <li>If a car starts from rest and accelerates uniformly to a speed of 18 km/h in 5 s, what is its acceleration?
+                    <span className="mcq-options"> A) 1 m/s²   B) 2 m/s²   C) 3.6 m/s²   D) 5 m/s² </span>
+                </li>
+                <li>Negative acceleration is also known as:
+                    <span className="mcq-options"> A) Velocity   B) Retardation   C) Uniform speed   D) Displacement </span>
+                </li>
+            </ol>
+            <div className="answer-key">
+                <strong>Answer Key:</strong> 1-B, 2-B, 3-C, 4-C, 5-C, 6-D, 7-C, 8-C, 9-C, 10-A, 11-A, 12-B
+            </div>
+      </div>
+    </>
+  );
+}
