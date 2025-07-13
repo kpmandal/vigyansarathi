@@ -261,7 +261,7 @@ export default function ForceAndLawsChapterPage() {
           <p>In simpler terms, for a collision between two or more objects in an isolated system, the total momentum before the collision is equal to the total momentum after the collision.</p>
 
           <h3>Derivation from Newton's Third Law</h3>
-          <p>Consider two balls, A and B, of masses mₐ and mₑ, travelling in the same direction with initial velocities uₐ and uₑ respectively. Let's assume uₐ > uₑ so they collide.</p>
+          <p>Consider two balls, A and B, of masses mₐ and mₑ, travelling in the same direction with initial velocities uₐ and uₑ respectively. Let's assume uₐ &gt; uₑ so they collide.</p>
           <ul className="styled-list">
               <li>During the collision (for a time t), ball A exerts a force Fₐₑ on ball B.</li>
               <li>Simultaneously, ball B exerts a force Fₑₐ on ball A.</li>
